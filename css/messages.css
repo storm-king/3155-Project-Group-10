@@ -8,6 +8,11 @@
 	overflow: visible;
 }
 
+.timer{
+	position: absolute;
+	left: 500px;
+}
+
 .cy{
 	position: absolute;
 	left:780px;

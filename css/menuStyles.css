@@ -8,6 +8,23 @@ html {
 	position:relative;
 	font-family: 'Open Sans', sans-serif;
 }
+
+.cen{
+	position: absolute;
+	left:560px;
+	top :350px;
+	font-family: Arial;
+	font-style: normal;
+		font-weight: normal;
+		font-size: 40px;
+		color: rgba(38,38,38,1);
+}
+
+.ck{
+	position: absolute;
+	left:700px;
+}
+
 .cw{
 	position: absolute;
 	left:900px;
