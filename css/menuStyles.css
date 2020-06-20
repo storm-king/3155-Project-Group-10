@@ -11,13 +11,64 @@ html {
 
 .cen{
 	position: absolute;
-	left:560px;
-	top :350px;
+	left:760px;
+	top :670px;
 	font-family: Arial;
 	font-style: normal;
 		font-weight: normal;
 		font-size: 40px;
 		color: rgba(38,38,38,1);
+}
+
+.cen button {
+	position: absolute;
+  padding: 10px;
+  min-width: 150px;
+	min-height: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #767072;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.cent{
+	position: absolute;
+	left:760px;
+	top :580px;
+	font-family: Arial;
+	font-style: normal;
+		font-weight: normal;
+		font-size: 70px;
+		color: rgba(38,38,38,1);
+	
+}
+
+.cent button {
+	position: absolute;
+  padding: 10px;
+  min-width: 150px;
+  left: 50%;
+	min-height: 50px;
+  transform: translateX(-50%);
+  background: #0199a6;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.center{
+	position: absolute;
+	left:565px;
+	top :350px;
+	font-family: Arial;
+	font-style: normal;
+		font-weight: normal;
+		font-size: 100px;
+		color: rgba(46,46,46,1.00);
 }
 
 .ck{
