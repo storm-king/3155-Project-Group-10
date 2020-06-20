@@ -64,12 +64,18 @@ body {
   border-bottom: 2px solid #8D4F42;
 }
 
-.header i {
+.header img {
   position: absolute;
   top: 0;
   right: 0;
-  font-size: 20px;
+  font-size: 12px;
   color: #8D4F42;
+  width: 12px;
+  height: 12px;
+}
+
+.header img:hover {
+  filter: brightness(1.2);
 }
 
 .body .form input {
@@ -93,6 +99,54 @@ body {
   position: relative;
   height: 20px;
   width: 40%;
+}
+
+.start {
+  padding: 15px;
+  position: relative;
+  height: 40px;
+  width: 100%;
+}
+
+.start button {
+  position: absolute;
+  padding: 10px;
+  min-width: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(40,205,65,1.00);
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.start button:hover {
+  filter: brightness(1.2);
+}
+
+.stop {
+  padding: 15px;
+  position: relative;
+  height: 40px;
+  width: 100%;
+}
+
+.stop button {
+  position: absolute;
+  padding: 10px;
+  min-width: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(255,59,48,1.00);
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.stop button:hover {
+  filter: brightness(80%);
 }
 
 .submit {
