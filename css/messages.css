@@ -8,6 +8,12 @@
 	overflow: visible;
 }
 
+.hr {
+	position: absolute;
+	left: 720px;
+	top:220px;
+}
+
 .timer{
 	position: absolute;
 	left: 500px;
@@ -21,7 +27,7 @@
 
 .eb{
 	position: absolute;
-	right:400px;
+	right:95px;
 	top: 140px;
 }
 
