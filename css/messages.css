@@ -8,6 +8,44 @@
 	overflow: visible;
 }
 
+.cy{
+	position: absolute;
+	left:780px;
+	top: 520px;
+}
+
+.eb{
+	position: absolute;
+	right:400px;
+	top: 140px;
+}
+
+.q {
+	position: absolute;
+	left:500px;
+	top:200px;
+}
+
+.r{
+	position: absolute;
+	left:600px;
+	top:800px;
+
+}
+
+.r2{
+	position: absolute;
+	left:500px;
+	top:200px;
+
+}
+
+.com{
+	position: absolute;
+	top:200px;
+	left:300px;
+}
+
 .mess{
 	position: absolute;
 	left:600px;
@@ -136,6 +174,7 @@
 }
 
 
+
 .taskFontPreset2 {
 		outline: none;
 		border: none;
@@ -235,8 +274,8 @@ ol{
 
 .Logout{
 		position: absolute;
-		right: 150px;
-		top: 45px;
+		right: 200px;
+		top: 40px;
 		overflow: visible;
 }
 
@@ -291,6 +330,14 @@ ol{
 .c1{
 	position: absolute;
 	left:900px;
+	top: 520px;
+	cursor: pointer;
+	
+}
+
+.cx{
+	position: absolute;
+	left:1030px;
 	top: 520px;
 	cursor: pointer;
 	

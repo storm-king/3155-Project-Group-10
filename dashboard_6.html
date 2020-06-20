@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>dashboard</title>
+	<meta charset="UTF-8">
+	<title>TaskBug - Dashboard</title>
+	<link rel="stylesheet" href="css/menuStyles.css">
+	<link href="css/dashboard.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="js/menu.js"></script>
+	<script type="text/javascript" src="js/time.js"></script>
+	<script type="text/javascript" src="js/manage.js"></script>
+	<link rel="stylesheet" href="css/recordTime.css">
+	<link rel="stylesheet" href="css/profileSet.css">
+</head>
+
+<body>
+	<div class="sidenav">
+		<div class="profileSection">
+			<a href="#profileSetup" onClick="profileSet()"><img class="exampleProfilePic" src="assets/Profile_Img.png" alt="Profile Image"></a>
+		</div>
+		
+		<div class="buttonGroup">
+			<a id="mainMenu" href="#mainMenu" onClick="openCloseNav();"><img class="sidebarMain" src="assets/Menu.png" alt="Main Menu"></a>
+			<a id="people" href="people_1.html"><img class="sidebarPeople" src="assets/profile.png" alt="People"></a>
+			<a id="notifications" href="notifications_1.html"><img class="sidebarNotif" src="assets/Alert.png" alt="Nofifications"></a>
+			<a id="dashboard" href="dashboard.html"><img class="sidebarDash" src="assets/Updated items/HomeButton.png" alt="Dashboard"></a>
+		</div>
+	</div>
+	
+	<div class="sidenav-extended">
+		<ul>
+			<li><a id="manage-tasks" href="#manageTasks" onClick="openCloseSubMenu();">Manage Tasks</a><img id="up-arrow" src="assets/Forward-arrow-small.png" alt="up-arrow"></li>
+			<div id="submenu">
+				<ul>
+					<li><a id="addTask" href="addTask.html">Add Task</a></li>
+					<li><a id="editTask" href="editSelect.html">Edit Task</a></li>
+					<li><a id="removeTask" href="removeTask.html">Remove Task</a></li>
+				</ul>
+			</div>
+			<li><a id="calendar" href="calendar.html">Calendar</a><img src="assets/Right-arrow-small.png" alt="right-arrow"></li>
+			 
+			<li><a href="recordTimeSelect.html">Record Time</a><img src="assets/Right-arrow-small.png" alt="right-arrow"></li>
+			<li><a id="feed" href="taskDetailsSelect.html">Task Details</a><img src="assets/Right-arrow-small.png" alt="right-arrow"></li>
+			<li><a href="prs.html">Peer Review</a><img src="assets/Right-arrow-small.png" alt="right-arrow"></li>
+			<li><a  href="comments_0.html">Comments</a><img src="assets/Right-arrow-small.png" alt="right-arrow"></li>
+		</ul>
+		<img id="closeMenu" alt="back arrow" src="assets/Backward-arrow.png" onClick="openCloseNav();">
+	</div>
+	
+	<!-- Record Time -->
+		<div class="overlay">
+      <div class="login">
+        <div class="header">
+          <h1>Time</h1>
+          <i class="fas fa-times"></i>
+        </div>
+        <div class="body">
+    		<form action="#" class="form">
+				<input type="text" placeholder="Start Time (Hrs:Mins)" />
+            	<input type="text" placeholder="Finish Time (Hrs:Mins)" />
+          	</form>
+        </div>
+
+        <div class="submit" onClick="recordTime()">
+          <button>Record</button>
+        </div>
+		
+      </div>
+    </div>
+	<!-- Record Time End -->
+	
+	<!-- Profile Setup -->
+	<div class="over">
+      <div class="login">
+        <div class="header">
+          <h1>Profile</h1>
+          <i class="fas fa-times"></i>
+        </div>
+        <div class="body">
+    		<form action="#" class="form">
+				<input type="text" placeholder="First Name" />
+            	<input type="text" placeholder="Last Name" />
+				<input type="email" placeholder="Email" />
+            	<input type="text" placeholder="ID" />
+          	</form>
+        </div>
+	
+		  
+        <div class="submit" onClick="profileSet()">
+          <button>Save Changes</button>
+        </div>
+	
+      </div>
+    </div>
+	<!-- Profile Setup End -->
+	
+	<div class="Completed_Class">
+		<span>Completed</span></div>
+	<div class="To_Do_Class">
+		<span>To Do</span>
+	</div>
+	<img class="LOGO5" src="assets/LOGO5.png">
+	<a href="HomePage.html"><img class="Logout" src="assets/Logout.png"></a>
+	<div class="copyright_">
+		<span>© TaskBug 2020</span>
+	</div>
+	<div class="todolist">
+	<ol>
+		
+	</ol>
+		</div>
+	<div class="completelist">
+	<ol>
+		
+		</ol>
+	</div>
+	
+</body>
+</html>

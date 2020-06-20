@@ -7,6 +7,12 @@
 	top: 10px;
 }
 
+.com{
+	position: absolute;
+	left:300px;
+	top:200px;
+}
+
 .ccc{
 	position: absolute;
 	right: 100px;
@@ -57,7 +63,7 @@
 
 .Completed_Class {
 		filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.502));
-		left: 1060px;
+		left: 1385px;
 		top: 181px;
 		position: absolute;
 		overflow: visible;
@@ -75,7 +81,7 @@ ol{
 }
 .To_Do_Class {
 		filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.478));
-		left: 245px;
+		left: 570px;
 		top: 178px;
 		position: absolute;
 		overflow: visible;
@@ -124,8 +130,8 @@ ol{
 
 .Logout{
 		position: absolute;
-		right: 150px;
-		top: 45px;
+		right: 200px;
+		top: 40px;
 		overflow: visible;
 }
 
@@ -146,16 +152,23 @@ ol{
 		font-size: 18px;
 		color: rgba(255,255,255,1);
 	}
+
 .todolist {
 	position: absolute;
 	top: 250px;
-	left: 200px;
+	left: 525px;
+}
+
+.todolistp {
+	position: absolute;
+	top: 250px;
+	left: 245px;
 }
 
 .completelist {
 	position: absolute;
 	top: 250px;
-	left: 1005px;
+	left: 1340px;
 }
 
 .todos {

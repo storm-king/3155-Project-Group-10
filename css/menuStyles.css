@@ -8,6 +8,11 @@ html {
 	position:relative;
 	font-family: 'Open Sans', sans-serif;
 }
+.cw{
+	position: absolute;
+	left:900px;
+	top:530px;
+}
 
 .sidenav {
 	height: 100%;
