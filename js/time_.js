@@ -1,109 +1,53 @@
 // JavaScript Document
-var timer = document.getElementById('timer');
-var toggb = document.getElementById('togg');
-var resetb = document.getElementById('reset');
+var timeElapsed = 0;
+var timerID = -1;
+var isStop = false;
 
-var watch = new W(timer);
+function tick() {
+    timeElapsed++
+	var timeElapsedAsString = timeElapsed.toString().toHHMMSS();
+    document.getElementById("timer").innerHTML = timeElapsedAsString;
+}
 
 function start() {
-  toggb.textContent = 'Stop';
-  watch.start();
+    if(timerID == -1){
+        timerID = setInterval(tick, 1000);
+    }
 }
 
 function stop() {
-  toggb.textContent = 'Start';
-  watch.stop();
+    if(timerID != -1){
+        clearInterval(timerID)
+        timerID = -1
+    }
 }
 
-toggb.addEventListener('click', function() {
-  watch.isOn ? stop() : start();
-});
+function reset() {
+    stop();
+    timeElapsed = -1;
+    tick()
+}
 
-resetb.addEventListener('click', function() {
-  watch.reset();
-});
+function alternateStopReset(){
+	isStop = !isStop;
+	if(isStop){
+		stop();
+	} else {
+		reset();
+	}
+}
 
+String.prototype.toHHMMSS = function () {
+    var sec_num = parseInt(this, 10);
+    var hours   = Math.floor(sec_num / 3600);
+    var minutes = Math.floor((sec_num - (hours * 3600)) / 60);
+    var seconds = sec_num - (hours * 3600) - (minutes * 60);
 
-function W(elem) {
-	
-	var time = 0;
-	var i;
-	var o;
-	
-	function update() {
-		if (this.isOn){
-		time += d();
-		}
-		
-		elem.textContent = format(time);
-	}
-	
-	
-	function d() {
-		var now = Date.now();
-		var tp = now - o;
-		o = now;
-		return tp;
-		
-	}
-	
-	function format(time){
-		
-		time = new Date(time);
-		
-		var hours = time.getHours().toString();	
-		var min = time.getMinutes().toString();
-		var seconds = time.getSeconds().toString();
-		
-		
-		if (hours.length < 2){
-			
-			hours = '0' + hours;
-			
-		}
-		
-		if (min.length < 2){
-			
-			min = '0' + min;
-			
-		}
-		
-		if (seconds.length < 2){
-			
-			seconds = '0' + seconds;
-			
-		}
-		
-		return hours + ' : ' + min + ' : ' + seconds;
-		
-	}
-	
-
-	
-	this.start = function() {
-		if(!this.isOn){
-			i = setInterval(update.bind(this), 10);
-			o = Date.now();
-			this.ison = true;
-		}
-	};		
-		this.stop = function() {
-			
-				clearInterval(i);
-				
-				i = null;
-				this.isOn = false;
-			
-		};
-	
-	this.reset = function() {
-		time = 0;
-		update();
-	};
-	
-	this.ison = false;
-		
-	}
+    if (hours   < 10) {hours   = "0"+hours;}
+    if (minutes < 10) {minutes = "0"+minutes;}
+    if (seconds < 10) {seconds = "0"+seconds;}
+    return hours+':'+minutes+':'+seconds;
+}
 
 
 

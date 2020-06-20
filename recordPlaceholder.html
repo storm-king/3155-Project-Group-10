@@ -7,7 +7,7 @@
 	<title>TaskBug - Dashboard</title>
 	<link rel="stylesheet" href="css/menuStyles.css">
 	<link href="css/messages.css" rel="stylesheet" type="text/css">
-	<script src="js/time_.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script type="text/javascript" src="js/time.js"></script>
 </head>
 
@@ -47,9 +47,10 @@
 	
 	<a href="dashboard_3.html"><img class="r" src="assets/Updated items/done.png"></a>
 	
-	<h1 class="cen" id="timer">00 : 00 : 00</h1>
-	<div class="cen"><button id="togg">Start</button>
-	<button id="reset">Reset</button>
+	<h1 class="cen" id="timer">00:00:00</h1>
+	<div class="cen"><button id="start" onClick="start();">Start</button>
+	<button id="stop/reset" onClick="alternateStopReset();">Stop/Reset</button>
+	<script src="js/time_.js"></script>
 	</div>
 	
 </body>
