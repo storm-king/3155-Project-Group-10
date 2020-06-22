@@ -47,7 +47,7 @@ input[type=text] {
 .peerReviewHeader {
 	width: 100%;
 	position: relative;
-	background-color: #8D4F42;
+	background-color: #0F2F55;
 }
 
 #headingText {
@@ -98,7 +98,7 @@ li {
 }
 
 #descriptionLabel {
-	color: #8D4F42;
+	color: #0F2F55;
 	font-weight: bold;
 }
 

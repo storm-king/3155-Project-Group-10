@@ -7,6 +7,24 @@
 	top: 10px;
 }
 
+.xd{
+	position: absolute;
+	top: 40px;
+	left:800px;
+}
+
+.xx{
+	position: absolute;
+	left:450px;
+	top:300px;
+}
+
+.xp{
+	position: absolute;
+	left:800px;
+	top:300px;
+}
+
 .com{
 	position: absolute;
 	left:300px;

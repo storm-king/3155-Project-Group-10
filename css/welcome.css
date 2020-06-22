@@ -3,7 +3,7 @@
 
 body
 {
-background-image:url(../assets/Background.png);
+background-image:url(../assets/Background.jpg);
 background-repeat: no-repeat;
 background-attachment: fixed;
 background-size:cover;
@@ -29,14 +29,14 @@ right:0;
 
 p{
 text-align:center;
-color: #8D4F42;
+color: #0F2F55;
 font-size: 98%;
 }
 
 h1 
 {
 text-align: center;
-color: #8D4F42;
+color: #0F2F55;
 font-size: 28px;
 }
 

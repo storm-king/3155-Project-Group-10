@@ -59,9 +59,9 @@ body {
 .header h1 {
   text-align: center;
   text-transform: uppercase;
-  color: #8D4F42;
+  color: #0F2F55;
   padding-bottom: 7px;
-  border-bottom: 2px solid #8D4F42;
+  border-bottom: 2px solid #0F2F55;
 }
 
 .header i {
@@ -69,7 +69,7 @@ body {
   top: 0;
   right: 0;
   font-size: 20px;
-  color: #8D4F42;
+  color: #0F2F55;
 }
 
 .body .form input {
@@ -77,8 +77,8 @@ body {
   padding: 10px;
   margin: 25px 10px;
   outline: none;
-  border: solid #8D4F42 1px;
-  color: #8D4F42;
+  border: solid #0F2F55 1px;
+  color: #0F2F55;
   transition: 0.4s;
 }
 
@@ -108,7 +108,7 @@ body {
   min-width: 100px;
   left: 50%;
   transform: translateX(-50%);
-  background: #8D4F42;
+  background: #0F2F55;
   border: none;
   color: white;
   cursor: pointer;

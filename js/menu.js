@@ -10,7 +10,7 @@ function openCloseNav() {
 		isNavHidden = false;
 	} else {
 		document.getElementsByClassName("sidenav-extended")[0].style.display = "none";
-		document.getElementById("mainMenu").style.backgroundColor = "#8D4F42";
+		document.getElementById("mainMenu").style.backgroundColor = "#0F2F55";
 		isNavHidden =  true;
 	}
 }

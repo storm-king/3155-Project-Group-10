@@ -1,6 +1,6 @@
 /* CSS Document */
 html { 
- 	background: url("../assets/Background.png") no-repeat center center fixed; 
+ 	background: url("../assets/Background.jpg") no-repeat center center fixed; 
  	-webkit-background-size: cover;
  	-moz-background-size: cover;
  	-o-background-size: cover;
@@ -27,7 +27,7 @@ html {
 	z-index: 1;
 	top: 0;
 	left: 0;
-	background-color: #8D4F42;
+	background-color: #0F2F55;
 	overflow-x: hidden;
 	padding-top: 20px;
 }
